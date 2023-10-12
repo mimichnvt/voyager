@@ -15,6 +15,8 @@
             <div class="logo">
                 <p>Voyage</p>
             </div>
+            <!--menu responsive-->
+            <div class="menu-toggle"></div>
             <ul class="menu">
                 <li><a href="#">accueil</a></li>
                 <li><a href="#container-2">à propos</a></li>
@@ -111,13 +113,26 @@
                 </ul>
              </div>
              <div class="images-contact">
-                <img src="images/image-contact.jpg"
+                <img src="images/image-contact.jpg">
              </div>
         </div>
     
     </section>
 
     <!--contact-->
-    <
+    <!--footer-->
+    <footer>
+        <p>Copyright Emilie Chanavat</p>
+    </footer>
+
+    <!--footer-->
+    <script>
+        var menu_toggle = document.querySelector('header .menu-toggle');
+        var menu = document.querySelector('header .menu')
+        menu_toggle.onclick = function (){
+            menu_toggle.classList.toggle('active');
+            menu.classList.toggle('responsive')
+        }
+    </script>
 </body>
 </html>

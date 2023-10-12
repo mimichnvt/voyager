@@ -179,9 +179,8 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
     margin-top:50px;
-    padding: 0 22.5%;
+    padding: 0 22.5px;
 
 }
 .list-photos .gallery-img img{
@@ -233,6 +232,7 @@ header{
     padding: 0 10%;
     width:80%;
 }
+
 #contact div{
     display:flex;
     justify-content: space-between;
@@ -323,3 +323,78 @@ input[type="submit"]:hover{
     border-radius: 6px;
 
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #675afe;
+    color:#fff;
+    padding:10px 0
+
+}
+
+/*responsiv*/
+@media (max-width: 784px){
+    #container{
+        padding: 5px 20px;
+    }
+    header .menu{
+        display:none;
+
+    }
+    header .menu-toggle{
+        border:2px solid #fff;
+        height:50px;
+        width:50px;
+        cursor:pointer;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+
+    }
+    header .menu-toggle::before{
+        position: absolute;
+        content: "";
+        width:28px;
+        height:2px;
+        background-color: #fff;
+        transform: translateY(-10px);
+        box-shadow: 0 10px #fff;
+    }
+    header .menu-toggle.active::before{
+        transform: translate(0) rotate(45deg);
+        box-shadow: 0 0 #fff;
+    }
+    header .menu-toggle::after{
+        position: absolute;
+        content: "";
+        width:28px;
+        height:2px;
+        background-color: #fff;
+        transform: translateY(10px);
+        transition:0.5s
+    }
+    header .menu-toggle.active::after{
+        transform: translate(0) rotate(-45deg);
+    } 
+    header .menu.responsive{
+            display:flex;
+            flex-direction: column;
+            position: absolute;
+            right:0;
+            top:0;
+            padding-top: 100px;
+            height:50%;
+            background-color: #675afe;
+            width:200px;
+   
+    }
+    header .menu.responsive li{
+        text-align: center;
+        margin: 25px 0;
+
+    }
+}
+    
