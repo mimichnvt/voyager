@@ -396,5 +396,45 @@ footer{
         margin: 25px 0;
 
     }
+    .conatiner-text h1{
+        font-size: 35px;
+
+    }
+    .conatiner-text p {
+        font-size: 15px;
+    }
+    #a-propos{
+        padding:20px;
+        margin:0;
+        height:fit-content;
+    }
+    .description-photo{
+        height:fit-content;
+        flex-direction: column;
+    }
+    .description-photo .desc{
+        width:100%;
+    }
+    .description-photo img{
+        width:70%;
+        height:350px;
+        margin:20px auto
+    }
+    #destination{
+        height:fit-content;
+    }
+    .list-photos{
+        flex-direction: column;
+        margin: 25px auto;
+        height: auto;
+        padding: 0;
+        width:80%;
+    }
+    .list-photos .gallery-img{
+        width:100%;
+    }
+    #contact .images-contact{
+        display:none;
+    }
 }
     
